@@ -1,0 +1,54 @@
+$primary-color: #333;
+$secondary-color: #008fd6;
+$text-color: #fffaf0;
+
+@function set-color($color) {
+  @if (lightness($color) > 70) {
+    @return #20639b;
+  } @else {
+    @return #333;
+  }
+}
+
+@mixin centralizeElement {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin loader {
+  h1 {
+    position: relative;
+    color: $secondary-color;
+    -webkit-text-stroke: 0.5vw $secondary-color;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    top: 25px;
+    left: -6%;
+
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      color: #403d61;
+      -webkit-text-stroke: 0vw #403d61;
+      border-right: 2px solid #01fe87;
+      overflow: hidden;
+      animation: animate 6s linear infinite;
+    }
+    @keyframes animate {
+      0%,
+      10%, 
+      100% {
+        width: 0;
+      }
+      70%,
+      90% {
+        width: 100%;
+      }
+    }
+  }
+}
