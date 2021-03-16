@@ -224,7 +224,26 @@ const handleSubmit = (e) => {
     alert(error))
 }
 
-document.querySelector("form").addEventListener("submit", handleSubmit);
+
+//Get Input Values
+let name = document.getElementById('nameInput').value;
+let email = document.getElementById('emailInput').value;
+let message = document.getElementById('message-text').value;
+
+
+function sendEmail(name, email, message) {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "hpetrovski.94@gmail.com",
+    Password: "cgwzivbfoijpvjdc",
+    To: "hpetrovski.94@gmail.com",
+    From: "hpetrovski.94@gmail.com",
+    Subject: `${name} sent you a message`,
+    Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`
+  }).then((message) => alert("mail sent successfully"))
+}
+sendEmail(name, email, message)
+
 
 
 
