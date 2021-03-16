@@ -212,7 +212,7 @@ window.addEventListener('scroll', () => {
 
 
 // ---------------------------------------- Form Submission --------------------------------------------------
-document.querySelector("form").addEventListener("submit", handleSubmit);
+document.getElementById("contactMe").addEventListener("submit", handleSubmit);
 
 
 
