@@ -211,15 +211,7 @@ window.addEventListener('scroll', () => {
 
 
 
-
-
-
-// Current Year
-document.getElementById('year').innerHTML = new Date().getFullYear();
-
-
-
-
+// ---------------------------------------- Form Submission --------------------------------------------------
 document.querySelector("form").addEventListener("submit", handleSubmit);
 
 const handleSubmit = (e) => {
@@ -233,6 +225,19 @@ const handleSubmit = (e) => {
   }).then(() => console.log('Form successfully submitted')).catch((error) =>
     alert(error))
 }
+
+
+
+
+
+
+
+
+// Current Year
+document.getElementById('year').innerHTML = new Date().getFullYear();
+
+
+
 
 
 
