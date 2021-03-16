@@ -212,6 +212,10 @@ window.addEventListener('scroll', () => {
 
 
 // ---------------------------------------- Form Submission --------------------------------------------------
+document.getElementById("contactMe").addEventListener("submit", handleSubmit);
+
+
+
 const handleSubmit = (e) => {
   e.preventDefault()
   let myForm = document.getElementById('contactMe');
