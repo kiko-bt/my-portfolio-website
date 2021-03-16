@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <title>H.Petrovski Portfolio Page</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-offset="0">
+
+
+  
+  <div class="loader">
+    <img src="./img/load.gif" alt="loader-gif">
+    <h1 data-text="Loading..." class="display-4">Loading...</h1>
+  </div>
+
+
+
+
+  <!-- ======= NAVBAR ======= -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <img src="./img/logo.png" alt="logo" width="30" height="30">
+      <h4 class="d-inline align-middle">Petrovski</h4>
+    </a>
+    <button class="navbar-toggler" type="button" id="toggler-btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" id="close-navbar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about"  class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#work" class="nav-link">Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="play.html" class="nav-link" id="playHangman">Play Hangman</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+
+
+
+
+
+<!--======= INTRO SECTION =======--->
+<section id="home">
+  <div class="primary-overlay text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <h1 class="display-2 mt-5 pt-5">I am Hristijan Petrovski <span class="txt-type" data-wait="3000" data-words='["Web Developer", "Web Designer"]' style="color: #008ed6; text-decoration: underline;"></span></h1>
+          <p class="lead mt-4">Personal portfolio website version 2021. Inspired by the known and unknown outer space and everything that comes with it. The future is exciting and it’s here. Let’s create something beautiful for it.</p>
+          <a href="./resume/Hristijan's Resume.pdf" class="btn btn-outline-secondary btn-lg text-white mt-3" download>
+            <i class="bi bi-cloud-arrow-down" style="color: #008ed6;"></i> Download Resume
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <img src="./img/main_pic.png" alt="myPicture" class="img-fluid rounded b-shadow-a">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+
+  <!--======= ABOUT SECTION =======--->
+  <section id="about" class="mf sect-pt4 mt-4 mb-4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Hristijan Petrovski</span></p>
+                      <p><span class="title-s">Profile: </span> <span>junior web developer</span></p>
+                      <p><span class="title-s">Email: </span><span>kiko-bt@hotmail.com</span></p>
+                      <p><span class="title-s">Phone: </span> <span>(+389) 76-648-104</span></p>
+                    </div>
+                  </div>
+                <div class="skill-mf">
+                  <p class="title-s mt-5">Skill</p>
+                  <span>HTML</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 1px;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span>CSS3</span> <span class="pull-right">80%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 1px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span>.Net</span> <span class="pull-right">70%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 1px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span>JAVASCRIPT</span> <span class="pull-right">65%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 1px;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="work">
+                    <h5>Recently I've worked with these...</h5>
+                    <p class="lead skills-currently">.Net MVC</p>
+                    <p class="lead skills-currently">Microsoft SQL</p>
+                    <p class="lead skills-currently">React JS</p>
+                    <p class="lead skills-currently">Bootstrap 5</p>
+                    <p class="lead skills-currently">Sass</p>
+                    <p class="lead skills-currently">Adobe Photoshop</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      <span>About me</span>
+                      <div class="line-mf"></div>
+                    </h5>
+                  </div>
+                  <p class="lead" id="bio">
+                    First of all, Thank You for visiting my site. Here you can see everything about me and you can contact me in any way, if you get bored you can play Hangman, and can guess the word easily if you come with a programming background. I am a person with a social spirit and with a sense of good things, also I set high goals and especially makes me happy when I realize them. I define myself by the work I want to do, not by the work I've done.
+                  </p>
+                  <p class="lead" id="bio">
+                    I can offer a complete solution with the technologies I work with. I would do my best and I prefer teamwork where all of us have a common vision for the things we build. I design and code beautifully simple things, you can check my mini projects and also take a look at our QubitDust team project it is down below and is hosted also, thanks to the academy which made us great friends.
+                  </p>
+                  <p class="lead" id="bio">
+                    Simply I love technology, my main hobby is building my setup, buying expensive things, and making my work environment a beautiful place where I draw inspiration and where I spend most of the day. Aside from all that I enjoy snowboarding, fitness, listening old school rap songs, reading some books, and making delicious pizza and pasta from Italian recipes. Now you know a little about me and you can contact me about everything that I can do for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- ======= PORTFOLIO SECTION ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                Some of the main projects made with desire
+              </p>
+              <div class="line-mf mb-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="./img/Screenshot (7).png" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="./img/Screenshot (7).png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="w-more">
+                      <a href="http://167.172.190.47/"><span class="w-ctegory">Company Listing Application</span> / <span class="w-date">Apr. 2020</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="./img/Screenshot (5).png" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="./img/Screenshot (5).png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="w-more">
+                      <span class="w-ctegory">Lamazon</span> / <span class="w-date">Nov. 2020</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="./img/Screenshot (6).png" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="./img/Screenshot (6).png" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="w-more">
+                      <span class="w-ctegory">SV. Permanent Makeup</span> / <span class="w-date">Jan. 2021</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+
+
+
+
+  <!-- ======= RANDOM QUOTES SECTION ======= -->
+  <div id="random-quotes" class="mt-5 mb-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <div id="print-quote" class="mt-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ======= SERVICES SECTION ======= -->
+  <section id="services" class="py-5 mt-5">
+    <div class="container">
+      <h3 class="display-5 head-process my-5">My Creative Process</h3>
+      <div class="row">
+        <div class="col-md-4">
+        <div class="service-box">
+          <div class="service-ico">
+            <span class="ico-circle"> <i class="bi bi-hand-thumbs-up"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">Interaction</h2>
+            <p class="s-description text-center">
+              When people are happy at work, they tend to do a better job. Errors are reduced, productivity increases and customer service improves. Having great office interaction also improves teamwork, which makes an entire team more efficient during times of high stress. It doesn't matter what your company does, what product or service it provides, good interaction means that people are having positive experiences. What are some examples of positive interactions?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box">
+          <div class="service-ico">
+            <span class="ico-circle"> <i class="bi bi-calendar2-day"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">Planning</h2>
+            <p class="s-description text-center">
+              Planning is the fundamental management function, which involves deciding beforehand, what is to be done, when is it to be done, how it is to be done and who is going to do it.
+              Planning is nothing but thinking before the action takes place. It helps us to take a peep into the future and decide in advance the way to deal with the situations, which we are going to encounter in future. It involves logical thinking and rational decision making.
+            </p>
+          </div>
+        </div>   
+      </div>
+      <div class="col-md-4">
+        <div class="service-box">
+          <div class="service-ico">
+            <span class="ico-circle"> <i class="bi bi-bar-chart-line"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">Productivity</h2>
+            <p class="s-description text-center">
+              You can now focus on the completion of tasks rather than the organization.
+              When you know that all your tasks have been planned with the help of a time tracking software, you do not have to remember everything and you don’t have to worry about all the little details of everyday activities. You can rely on your work plan. And as a result, your mind will be energized and with your focus centered on your current task, you’ll be sure to hit optimum productivity.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box">
+          <div class="service-ico">
+            <span class="ico-circle"> <i class="bi bi-emoji-smile"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">Work-Life Balance</h2>
+            <p class="s-description text-center">
+              More often than not, we tend to dedicate a huge aspect of our lives to work. With little or no time to rest, it can take a mental and physical toll on us and our relationships outside work.
+              When you have everything under control in the professional front, your mood automatically eases up, your energy is revived and you have enough time for social life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box">
+          <div class="service-ico">
+            <span class="ico-circle"> <i class="bi bi-bug"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">Good Bug Solving Habits</h2>
+            <p class="s-description text-center">
+              They’re dramatic. The investigation of a great bug can be full of twists and turns. A great bug is like a good joke or a riddle — you’re expecting one outcome, but the result veers off in another direction.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box">
+          <div class="service-ico">
+            <span class="ico-circle"> <i class="bi bi-person"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">Good Communication</h2>
+            <p class="s-description text-center">
+              Listening is perhaps one of the most important aspects of effective communication. Prepare your thoughts ahead of time and carefully think about what it is that you want to say. Skills allow you to understand and be understood by others. These can include but are not limited to sharing ideas with others, actively listening in conversations, giving and receiving feedback, and public speaking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="bg-dark">
+    <div class="container">
+      <div class="row"> 
+        <div class="col text-center py-4">
+          <h3>- <span class="word">H</span>.Petrovski</h3>
+          <h2>Let's Make Something Great Together</h2>
+          <button class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#contactModal" id="contact">Contact Me</button>
+          <div class="socials mt-3">
+            <ul>
+              <li><a href="https://www.facebook.com/"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+              <li><a href="https://www.instagram.com/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+              <li><a href="https://www.linkedin.com/in/hristijan-petrovski-69a3691a8/"><span class="ico-circle"><i class="bi bi-linkedin"></i></i></span></a></li>
+              <li><a href="https://github.com/kiko-bt"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+              <li><a href="tel://(+389)78-648-104"><span class="ico-circle"><i class="bi bi-telephone-fill"></i></span></a></li>
+              
+              <li><a href="mailto:kiko-bt@hotmail.com"><span class="ico-circle"><i class="bi bi-envelope-fill"></i></span></a></li>
+            </ul>
+          </div>
+          <p class="mt-4">Copyright &copy; <span id="year"></span> | All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- CONTACT MODAL -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message-text" placeholder="Message"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script> 
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+ <!-- Template Main JS File -->
+ <script src="./js/main.js"></script>
+</body>
+</html>
