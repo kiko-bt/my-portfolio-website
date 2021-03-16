@@ -375,7 +375,8 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form name="contact" method="POST" data-netlify="true" id="contactMe">
+          <form name="contact" onsubmit="submit" method="POST" data-netlify="true" id="contactMe">
+            <input type="hidden" name="form-name" value="contact" />
             <div class="mb-3">
               <input type="text" name="name" class="form-control" placeholder="Name" id="nameInput">
             </div>
@@ -385,16 +386,16 @@
             <div class="mb-3">
               <textarea class="form-control" name="message" id="message-text" placeholder="Message"></textarea>
             </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" id="contactBtn">Send message</button>
+            </div>
           </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-primary" id="contactBtn">Send message</button>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
   <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script> 
   <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
