@@ -25,8 +25,9 @@ body {
 }
 
 .disappear {
-  animation: vanish 8s forwards;
+  animation: vanish 5s forwards;
 }
+
 @keyframes vanish {
   100% {
     opacity: 0;
