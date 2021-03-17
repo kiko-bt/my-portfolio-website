@@ -211,22 +211,32 @@ window.addEventListener('scroll', () => {
 
 
 
-// ---------------------------------------- Form Submission --------------------------------------------------
-document.getElementById("contactMe").addEventListener("submit", handleSubmit);
+// ---------------------------------------- Form Validation --------------------------------------------------
+const form = document.getElementById('contactMe');
+const name = document.getElementById('nameInput');
+const email = document.getElementById('emailInput');
+const message = document.getElementById('message-text');
 
 
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
 
-const handleSubmit = (e) => {
-  e.preventDefault()
-  let myForm = document.getElementById('contactMe');
-  let formData = new FormData(myForm)
-  fetch('/', {
-    method: 'POST',
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
-  }).then(() => console.log('Form successfully submitted')).catch((error) =>
-    alert(error))
-}
+
 
 
 
