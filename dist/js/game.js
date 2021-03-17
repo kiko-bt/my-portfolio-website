@@ -103,7 +103,6 @@ window.addEventListener('keydown', e => {
 
 
 playAgainBtn.addEventListener('click', () => {
-
   correctLetters.splice(0);
   wrongLetters.splice(0);
 
@@ -116,6 +115,6 @@ playAgainBtn.addEventListener('click', () => {
   popup.style.display = 'none';
 });
 
-
-
 displayWord();
+
+
