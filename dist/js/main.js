@@ -216,7 +216,7 @@ const form = document.getElementById('contactMe');
 const name = document.getElementById('nameInput');
 const email = document.getElementById('emailInput');
 const message = document.getElementById('message-text');
-const emailValidation = document.getElementById('emailValidation');
+
 
 
 (function() {
@@ -232,20 +232,10 @@ const emailValidation = document.getElementById('emailValidation');
           event.stopPropagation();
         }
         form.classList.add('was-validated');
-        if(!isValidEmail(email.value)) {
-          emailValidation.innerHTML = 'Email is not valid';
-        }
       }, false);
     });
   }, false);
 })();
-
-function isValidEmail(email) {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-}
-
-
 
 
 
