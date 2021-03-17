@@ -1,6 +1,8 @@
 $primary-color: #333;
 $secondary-color: #008fd6;
 $text-color: #fffaf0;
+$error-color: #e74c3c;
+$success-color: #5cb85c;
 
 @function set-color($color) {
   @if (lightness($color) > 70) {
@@ -41,7 +43,7 @@ $text-color: #fffaf0;
     }
     @keyframes animate {
       0%,
-      10%, 
+      10%,
       100% {
         width: 0;
       }

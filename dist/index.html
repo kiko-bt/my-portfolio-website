@@ -375,16 +375,25 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form name="contact" onsubmit="submit" method="POST" data-netlify="true" id="contactMe">
-            <input type="hidden" name="form-name" value="contact" />
+          <form name="contact" class="needs-validation" method="POST" data-netlify="true" id="contactMe" novalidate>
+            <input type="hidden" name="form-name" value="contact"/>
             <div class="mb-3">
-              <input type="text" name="name" class="form-control" placeholder="Name" id="nameInput">
+              <input type="text" name="name" class="form-control is-valid" placeholder="Name" id="nameInput" required="">
+              <div class="invalid-feedback">
+                Name is required.
+              </div>
             </div>
             <div class="mb-3">
-              <input type="email" name="email" class="form-control" placeholder="Email" id="emailInput">
+              <input type="email" name="email" class="form-control is-valid" placeholder="Email" id="emailInput" required="">
+              <div class="invalid-feedback">
+                Email is required.
+              </div>
             </div>
             <div class="mb-3">
-              <textarea class="form-control" name="message" id="message-text" placeholder="Message"></textarea>
+              <textarea class="form-control is-valid" name="message" id="message-text" placeholder="Message" required=""></textarea>
+              <div class="invalid-feedback">
+                Message is required.
+              </div>
             </div>
             <div class="modal-footer">
               <button type="submit" class="btn btn-primary" id="contactBtn">Send message</button>
