@@ -100,9 +100,7 @@ window.addEventListener('keydown', e => {
   }
 });
 
-
-
-playAgainBtn.addEventListener('click', () => {
+function restartGame() {
   correctLetters.splice(0);
   wrongLetters.splice(0);
 
@@ -113,8 +111,22 @@ playAgainBtn.addEventListener('click', () => {
   updateWrongLettersEl();
 
   popup.style.display = 'none';
+}
+
+
+function triggerButton() {
+  window.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+      restartGame();
+    }
+  })
+}
+
+triggerButton();
+
+playAgainBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  restartGame();
 });
 
 displayWord();
-
-
