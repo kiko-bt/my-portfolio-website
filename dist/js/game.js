@@ -5,6 +5,7 @@ const popup = document.getElementById('popup-container');
 const notification = document.getElementById('notification-container');
 const finalMessage = document.getElementById('final-message');
 const figureParts = document.querySelectorAll('.figure-part');
+let score = 0;
 
 
 const words = ['application', 'programming', 'interface', 'inheritance'];
@@ -31,7 +32,12 @@ function displayWord() {
 
 
   if(innerWord === selectedWord) {
-    finalMessage.innerText = `Congratulations! You won! 😃`;
+    if (Math.pow(score, 2) === 64) {
+      finalMessage.innerText = `⭐ Congratulations you reach the highest points score in the game ⭐`;
+    }
+    else {
+      finalMessage.innerText = `Congratulations! You won! 😃\n Your score is ${Math.pow(score, 2)}`;
+    }
 
     popup.style.display = 'flex'
   }
@@ -85,6 +91,12 @@ window.addEventListener('keydown', e => {
       if(!correctLetters.includes(letter)) {
         correctLetters.push(letter);
 
+        const reducer = correctLetters.reduce((accumulator, currentValue) => {
+          return accumulator + currentValue;
+        });
+
+        reducer.length += score++;
+
         displayWord();
       } else {
         showNotification()
@@ -92,6 +104,7 @@ window.addEventListener('keydown', e => {
     } else {
       if(!wrongLetters.includes(letter)) {
         wrongLetters.push(letter);
+        score--;
         updateWrongLettersEl();
       } else {
         showNotification();
@@ -111,6 +124,7 @@ function restartGame() {
   updateWrongLettersEl();
 
   popup.style.display = 'none';
+  score = 0;
 }
 
 
