@@ -245,6 +245,7 @@ const message = document.getElementById('message-text');
 
 // Current Year
 document.getElementById('year').innerHTML = new Date().getFullYear();
+document.getElementById('copyrightYear').innerHTML = new Date().getFullYear();
 
 
 
