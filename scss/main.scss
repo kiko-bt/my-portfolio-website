@@ -145,26 +145,22 @@ body {
     font-size: 25px;
   }
 
-  .title-left span {
-    display: inline-block;
-    position: relative;
-  }
-
   .title-left span::before,
   .title-left span::after {
     content: "";
-    position: absolute;
     border: 1px solid $secondary-color;
     width: 33px;
   }
 
   .title-left span::before {
+    content: "";
     top: 15px;
     right: 100%;
     margin-right: 10px;
   }
 
   .title-left span::after {
+    content: "";
     top: 16px;
     left: 100%;
     margin-left: 10px;
